@@ -7,12 +7,21 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace GymProyecto
+namespace Vehiculos
 {
 
 
     public partial class INDEX
     {
+
+        /// <summary>
+        /// Control form1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
         /// Control Image1.
@@ -24,30 +33,30 @@ namespace GymProyecto
         protected global::System.Web.UI.WebControls.Image Image1;
 
         /// <summary>
-        /// Control TUSUARIO.
+        /// Control TUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TUSUARIO;
+        protected global::System.Web.UI.WebControls.TextBox TUsuario;
 
         /// <summary>
-        /// Control TCONTRASENA.
+        /// Control TContra.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TCONTRASENA;
+        protected global::System.Web.UI.WebControls.TextBox TContra;
 
         /// <summary>
-        /// Control Ingresar.
+        /// Control BIngresar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Ingresar;
+        protected global::System.Web.UI.WebControls.Button BIngresar;
     }
 }

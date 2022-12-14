@@ -38,7 +38,7 @@ namespace Vehiculos
                         CommandType = CommandType.StoredProcedure
                     };
                     cmd.Parameters.Add(new SqlParameter("@Usuario", CLUsuarios.Usuario));
-                    cmd.Parameters.Add(new SqlParameter("@Contraseña", CLUsuarios.Clave));
+                    cmd.Parameters.Add(new SqlParameter("@Clave", CLUsuarios.Clave));
                     cmd.Parameters.Add(new SqlParameter("@Nombre", CLUsuarios.Nombre));
                     cmd.Parameters.Add(new SqlParameter("@Apellido", CLUsuarios.Apellido));
                     SqlDataReader Reade = cmd.ExecuteReader();
@@ -73,7 +73,7 @@ namespace Vehiculos
                         CommandType = CommandType.StoredProcedure
                     };
                     cmd.Parameters.Add(new SqlParameter("@Usuario", CLUsuarios.Usuario));
-                    cmd.Parameters.Add(new SqlParameter("@Contraseña", CLUsuarios.Clave));
+                    cmd.Parameters.Add(new SqlParameter("@Clave", CLUsuarios.Clave));
                     cmd.Parameters.Add(new SqlParameter("@Nombre", CLUsuarios.Nombre));
                     cmd.Parameters.Add(new SqlParameter("@Apellido", CLUsuarios.Apellido));
                     SqlDataReader Reade = cmd.ExecuteReader();
@@ -96,9 +96,6 @@ namespace Vehiculos
             int tipo = 0;
             SqlConnection Conn = new SqlConnection();
             CLUsuarios.Usuario = TCCorreo.Text;
-            CLUsuarios.Clave = TCOUsuarios.Text;
-            CLUsuarios.Nombre = TNomUsu.Text;
-            CLUsuarios.Apellido = TAUsuarios.Text;
             try
             {
                 using (Conn = CLConexion.obtenerConexion())
@@ -107,10 +104,7 @@ namespace Vehiculos
                     {
                         CommandType = CommandType.StoredProcedure
                     };
-                    cmd.Parameters.Add(new SqlParameter("@Usuario", CLUsuarios.Usuario));
-                    cmd.Parameters.Add(new SqlParameter("@Contraseña", CLUsuarios.Clave));
-                    cmd.Parameters.Add(new SqlParameter("@Nombre", CLUsuarios.Nombre));
-                    cmd.Parameters.Add(new SqlParameter("@Apellido", CLUsuarios.Apellido));
+                    cmd.Parameters.Add(new SqlParameter("@Usuario", CLUsuarios.Usuario)); 
                     SqlDataReader Reade = cmd.ExecuteReader();
                     Label1.Text = "Registro correcto";
                 }
@@ -136,4 +130,3 @@ namespace Vehiculos
         }
     }
     }
-}

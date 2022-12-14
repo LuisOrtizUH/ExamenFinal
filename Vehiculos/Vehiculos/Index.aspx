@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="INDEX.aspx.cs" Inherits="Vehiculos.INDEX" %>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Login V2</title>
@@ -32,10 +34,19 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				<form id="form1" runat="server">
 					<span class="login100-form-title p-b-26">
-						Bienvenidos</span><span class="login100-form-title p-b-48"><i class="zmdi zmdi-font"></i></span><div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-							<asp:TextBox ID="TIngresar" class="input100" runat="server"></asp:TextBox>
+						Bienvenidos
+                    <br />
+                    CarsLuis
+                    <br />
+                    <br />
+                    <asp:Image ID="Image1" runat="server" Height="204px" ImageUrl="~/Imagenes/Carro 1.jpg" Width="256px" />
+                    <br />
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<asp:TextBox ID="TUsuario" class="input100" runat="server" BackColor="Black" BorderColor="Black" ForeColor="White"></asp:TextBox>
 						<span class="focus-input100" data-placeholder="Email"></span>
 					</div>
 
@@ -43,14 +54,14 @@
 						<span class="btn-show-pass">
 							<i class="zmdi zmdi-eye"></i>
 						</span>
-						<asp:TextBox ID="TContra" class="input100" runat="server"></asp:TextBox>
+						<asp:TextBox ID="TContra" class="input100" runat="server" BackColor="Black" BorderColor="Black" ForeColor="White"></asp:TextBox>
 						<span class="focus-input100" data-placeholder="Password"></span>
 					</div>
 
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-                            <asp:Button class="login100-form-btn" runat="server" Text="Ingresar"></asp:Button>
+							<asp:Button ID="BIngresar" button class="login100-form-btn"  runat="server" Text="Ingresar" OnClick="BIngresar_Click" BackColor="Black" BorderColor="Black" ForeColor="White" />
 						</div>
 					</div>
 

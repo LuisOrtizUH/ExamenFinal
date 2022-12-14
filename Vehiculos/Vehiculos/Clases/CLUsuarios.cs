@@ -32,7 +32,7 @@ namespace Vehiculos.Clases
                         CommandType = CommandType.StoredProcedure
                     };
                     cmd.Parameters.Add(new SqlParameter("@Usuario", Usuario));
-                    cmd.Parameters.Add(new SqlParameter("@Contraseña", Clave));
+                    cmd.Parameters.Add(new SqlParameter("@Clave", Clave));
 
                     // retorno = cmd.ExecuteNonQuery();
                     using (SqlDataReader rdr = cmd.ExecuteReader())

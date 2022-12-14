@@ -77,11 +77,13 @@
     <Content Include="fonts\iconic\css\material-design-iconic-font.css" />
     <Content Include="fonts\iconic\css\material-design-iconic-font.min.css" />
     <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="Imagenes\Carro 1.jpg" />
+    <Content Include="Imagenes\PLACAS.jpg" />
+    <Content Include="Imagenes\USUARIOS.jpg" />
     <Content Include="images\icons\favicon.ico" />
-    <Content Include="Index.aspx" />
+    <Content Include="INDEX.aspx" />
     <Content Include="index.html" />
     <Content Include="js\main.js" />
-    <Content Include="Login.aspx" />
     <Content Include="vendor\animate\animate.css" />
     <Content Include="vendor\animsition\css\animsition.css" />
     <Content Include="vendor\animsition\css\animsition.min.css" />
@@ -115,25 +117,20 @@
     <Content Include="Web.config" />
     <Content Include="Usuarios.aspx" />
     <Content Include="Placas.aspx" />
+    <Content Include="Reporte.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\CLConexion.cs" />
     <Compile Include="Clases\CLUsuarios.cs" />
     <Compile Include="Clases\Placas.cs" />
-    <Compile Include="Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
+    <Compile Include="INDEX.aspx.cs">
+      <DependentUpon>INDEX.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
+    <Compile Include="INDEX.aspx.designer.cs">
+      <DependentUpon>INDEX.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Inicio.Master.cs">
       <DependentUpon>Inicio.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -141,7 +138,6 @@
     <Compile Include="Inicio.Master.designer.cs">
       <DependentUpon>Inicio.Master</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usuarios.aspx.cs">
       <DependentUpon>Usuarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -155,6 +151,13 @@
     </Compile>
     <Compile Include="Placas.aspx.designer.cs">
       <DependentUpon>Placas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte.aspx.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte.aspx.designer.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -213,7 +216,6 @@
     <Content Include="fonts\poppins\Poppins-SemiBoldItalic.ttf" />
     <Content Include="fonts\poppins\Poppins-Thin.ttf" />
     <Content Include="fonts\poppins\Poppins-ThinItalic.ttf" />
-    <Content Include="Inicio.Master" />
     <None Include="packages.config" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css.map" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css.map" />
@@ -221,6 +223,7 @@
     <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
     <Content Include="vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Inicio.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -228,9 +231,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Imagenes\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
